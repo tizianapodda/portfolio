@@ -1,13 +1,23 @@
 body, html {
   margin: 0px;
   padding: 0px;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; }
 
 body {
   background-color: #3c3a45; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+li {
+  list-style: none; }
+
 nav {
   position: fixed;
+  z-index: 999;
   width: 100%;
   font-size: 11px;
   letter-spacing: 3px; }
@@ -17,10 +27,8 @@ nav {
     margin: 45px; }
   nav #menu li {
     float: left;
-    margin-left: 20px;
-    list-style: none; }
+    margin-left: 20px; }
     nav #menu li a {
-      text-decoration: none;
       color: #989898; }
       nav #menu li a:hover {
         color: #ffffff; }
@@ -32,5 +40,81 @@ nav {
     padding: 0;
     margin: 45px;
     letter-spacing: 2.6px; }
+
+#home #vertical-right-bar {
+  width: 50px;
+  height: 60vh;
+  margin-top: 0;
+  float: right;
+  margin-right: 45px; }
+#home ul {
+  margin-top: 36vh; }
+#home ul li {
+  -webkit-transform: rotate(90deg);
+  /* Safari */
+  -moz-transform: rotate(90deg);
+  /* Firefox */
+  -ms-transform: rotate(90deg);
+  /* IE */
+  -o-transform: rotate(90deg);
+  /* Opera */
+  margin-top: 70px;
+  font-size: 11px;
+  letter-spacing: 1.6px;
+  font-weight: 600; }
+#home a {
+  color: #989898; }
+  #home a:hover {
+    color: #ffffff; }
+#home #bottom-text {
+  position: relative;
+  color: #ffffff;
+  margin: 22vh 45px 0 45px; }
+  #home #bottom-text #my-description {
+    font-size: 20px;
+    letter-spacing: 0.57px;
+    line-height: 30px; }
+    #home #bottom-text #my-description #location {
+      font-size: 11px;
+      letter-spacing: 3px; }
+  #home #bottom-text #reserved {
+    letter-spacing: 0.5px;
+    color: #989898;
+    margin-top: 96px;
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 300; }
+#home #shape {
+  position: absolute;
+  z-index: 999;
+  margin-top: 100px;
+  height: 70%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%; }
+  #home #shape #brown-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 141, 151, 0.1);
+    position: relative;
+    z-index: 100; }
+  #home #shape #blue-circle {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: #233154;
+    position: relative;
+    z-index: 101;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5); }
+  #home #shape #azure-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #435dff;
+    position: relative;
+    z-index: 102;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=stili.css.map */

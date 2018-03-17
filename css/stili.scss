@@ -8,12 +8,28 @@ body, html{
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
+
 body{
     background-color: $backgroundColorOne;
 }
+
+a{
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none; 
+    }
+}
+
+li{
+    list-style: none;
+}
+
 nav{
     position: fixed;
+    z-index: 999;
     width: 100%;
     font-size: 11px;
     letter-spacing: 3px;
@@ -27,14 +43,12 @@ nav{
     #menu li{
         float: left;
         margin-left: 20px;
-        list-style: none;
 
         a{
-            text-decoration: none;
             color: $textColorGrey;
 
             &:hover{
-                color: $textColorWhite;   
+                color: $textColorWhite;
             }
         }
     }
@@ -49,5 +63,107 @@ nav{
         padding: 0;
         margin: 45px;
         letter-spacing: 2.6px;
+    }
+}
+
+#home{
+    #vertical-right-bar{
+        width: 50px;
+        height: 60vh;
+        margin-top: 0;
+        float: right;
+        margin-right: 45px;
+    }
+
+    ul{
+        margin-top: 36vh;
+    }
+
+    ul li{
+        -webkit-transform: rotate(90deg);  /* Safari */
+        -moz-transform: rotate(90deg); /* Firefox */
+        -ms-transform: rotate(90deg);  /* IE */
+        -o-transform: rotate(90deg);   /* Opera */
+        margin-top: 70px;
+        font-size: 11px;
+        letter-spacing: 1.6px;
+        font-weight: 600;
+    }
+
+    a{
+        color: $textColorGrey;
+        
+        &:hover{
+            color: $textColorWhite;
+        }
+    }
+
+    #bottom-text{
+        position: relative;
+        color: $textColorWhite;
+        margin: 22vh 45px 0 45px;
+
+        #my-description{
+            font-size: 20px;
+            letter-spacing: 0.57px;
+            line-height: 30px;
+
+            #location{
+                font-size: 11px;
+                letter-spacing: 3px;
+            }
+        }
+
+        #reserved{
+            letter-spacing: 0.5px;
+            color: $textColorGrey;
+            margin-top: 96px;
+            float: right;
+
+            font: {
+                family: 'Open Sans', sans-serif;
+                size: 11px;
+                weight: 300;
+            }
+        }
+    }
+
+    #shape{
+        position: absolute;
+        z-index: 999;
+        margin-top: 100px;
+        height: 70%;
+        width: 80%;
+        margin-left: 10%; 
+        margin-right: 10%;
+
+        #brown-circle{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: rgba($color: #ff8d97, $alpha: 0.1);
+            position: relative;
+            z-index: 100;
+        }
+
+        #blue-circle{
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background-color: rgba($color: #233154, $alpha: 1.0);
+            position: relative;
+            z-index: 101;
+            box-shadow: 0px 2px 16px rgba(0, 0, 0, .5);
+        }
+
+        #azure-circle{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgba($color: #435dff, $alpha: 1.0);
+            position: relative;
+            z-index: 102;
+            box-shadow: 0px 2px 16px rgba(0, 0, 0, .5);
+        }
     }
 }
