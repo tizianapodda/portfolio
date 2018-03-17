@@ -1,0 +1,50 @@
+//Color variables
+$backgroundColorOne: #3c3a45;
+$backgroundColorTwo: #212025;
+$textColorGrey: #989898;
+$textColorWhite: #ffffff;
+
+body, html{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: $backgroundColorOne;
+}
+nav{
+    position: fixed;
+    width: 100%;
+
+    #menu{
+        padding: 0px;
+        float: right;
+        margin: 45px;
+    }
+
+    #menu li{
+        float: left;
+        margin-left: 20px;
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            color: $textColorGrey;
+
+            &:hover{
+                color: $textColorWhite;   
+            }
+        }
+    }
+
+    p, a{
+        font-weight: 600;
+    }
+
+    p{
+        color: $textColorWhite;
+        float: left;
+        padding: 0;
+        margin: 45px;
+    }
+}

@@ -1,0 +1,33 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  background-color: #3c3a45; }
+
+nav {
+  position: fixed;
+  width: 100%; }
+  nav #menu {
+    padding: 0px;
+    float: right;
+    margin: 45px; }
+  nav #menu li {
+    float: left;
+    margin-left: 20px;
+    list-style: none; }
+    nav #menu li a {
+      text-decoration: none;
+      color: #989898; }
+      nav #menu li a:hover {
+        color: #ffffff; }
+  nav p, nav a {
+    font-weight: 600; }
+  nav p {
+    color: #ffffff;
+    float: left;
+    padding: 0;
+    margin: 45px; }
+
+/*# sourceMappingURL=stili.css.map */
