@@ -44,9 +44,10 @@ nav {
 #home #vertical-right-bar {
   width: 50px;
   height: 60vh;
-  margin-top: 0;
-  float: right;
-  margin-right: 45px; }
+  top: 0;
+  right: 45px;
+  position: fixed;
+  z-index: 1000; }
 #home ul {
   margin-top: 36vh; }
 #home ul li {
@@ -69,7 +70,7 @@ nav {
 #home #bottom-text {
   position: relative;
   color: #ffffff;
-  margin: 22vh 45px 0 45px; }
+  margin: 82vh 45px 0 45px; }
   #home #bottom-text #my-description {
     font-size: 20px;
     letter-spacing: 0.57px;
@@ -80,7 +81,7 @@ nav {
   #home #bottom-text #reserved {
     letter-spacing: 0.5px;
     color: #989898;
-    margin-top: 96px;
+    margin-top: 110px;
     float: right;
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
@@ -91,7 +92,7 @@ nav {
   margin-top: 100px;
   height: 70%;
   width: 80%;
-  margin-left: 10%;
+  margin-left: 23%;
   margin-right: 10%; }
   #home #shape #brown-circle {
     width: 250px;
@@ -99,7 +100,9 @@ nav {
     border-radius: 50%;
     background-color: rgba(255, 141, 151, 0.1);
     position: relative;
-    z-index: 100; }
+    z-index: 100;
+    left: 310px;
+    top: 20px; }
   #home #shape #blue-circle {
     width: 170px;
     height: 170px;
@@ -107,7 +110,9 @@ nav {
     background-color: #233154;
     position: relative;
     z-index: 101;
-    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+    left: 119px;
+    top: 70px; }
   #home #shape #azure-circle {
     width: 150px;
     height: 150px;
@@ -115,6 +120,67 @@ nav {
     background-color: #435dff;
     position: relative;
     z-index: 102;
-    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+    left: 10px;
+    top: 180px; }
+  #home #shape #red-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ff6060;
+    position: relative;
+    z-index: 103;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+    left: -60px;
+    top: 280px; }
+  #home #shape #grey-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(216, 216, 216, 0.1);
+    position: relative;
+    z-index: 99;
+    left: -130px;
+    top: 330px; }
+  #home #shape #outline-circle-1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 1px rgba(240, 226, 200, 0.2);
+    position: relative;
+    z-index: 105;
+    left: -613px;
+    top: 97px; }
+  #home #shape #outline-circle-2 {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 1px rgba(255, 209, 221, 0.4);
+    position: relative;
+    z-index: 106;
+    left: -728px;
+    top: 78px; }
+    #home #shape #outline-circle-2 #test1 {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: white;
+      position: relative;
+      z-index: 107;
+      top: 64%;
+      left: 1%;
+      opacity: 0.4; }
+    #home #shape #outline-circle-2 #test2 {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: white;
+      position: relative;
+      z-index: 107;
+      top: 20%;
+      left: 91.7%;
+      opacity: 0.4; }
 
 /*# sourceMappingURL=stili.css.map */
