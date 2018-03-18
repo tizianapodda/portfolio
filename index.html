@@ -9,9 +9,21 @@
 </head>
 <body>
 	<nav>
-		<p>TIZIANA PODDA</p>
+		<p id="logo">TIZIANA PODDA</p>
 
-		<ul id="menu">
+		<div id="mobile-menu-button">
+			<div class="menu-button-line"></div>
+			<div class="menu-button-line"></div>
+		</div>
+
+		<ul id="desktop-menu">
+			<li><a href="#">INDEX</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">PORTFOLIO</a></li>
+			<li><a href="#">CONTACT</a></li>
+		</ul>
+
+		<ul id="mobile-menu">
 			<li><a href="#">INDEX</a></li>
 			<li><a href="#">ABOUT</a></li>
 			<li><a href="#">PORTFOLIO</a></li>
@@ -35,7 +47,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 d-none d-md-block">
 				<div id="vertical-right-bar">
 					<ul>
 						<li><a href="#">Github</a></li>
@@ -55,6 +67,12 @@
 					<span id="location">BASED IN BRESCIA, ITALY</span>
 				</p>
 			</div>
+
+			<div class="col-sm-12 d-md-none contact-me">
+				<p>If you want to know something more about me</p>
+				<a href="#" id="contact-me-button">CONTACT ME</a>
+			</div>
+
 			<div class="col-md-6">
 				<p id="reserved">
 					2018 All rights reserved. Design and development by Tiziana Podda
@@ -63,6 +81,9 @@
 		</div>
 	</section>
 
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/portfolio.js"></script>
+	<script type="text/javascript" src="js/mobile-menu.js"></script>
 </body>
 </html>
