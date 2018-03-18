@@ -68,6 +68,7 @@ nav{
         padding-top: 35vh;
         text-align: center;
         font-size: 18px;
+        display: none;
 
         li{
             margin-top: 26px;
@@ -322,6 +323,10 @@ nav{
     nav{
         #desktop-menu{
             display: none;
+        }
+
+        #mobile-menu{
+            display: block;
         }
 
         #mobile-menu-button{

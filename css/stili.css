@@ -43,7 +43,8 @@ nav {
     padding: 0;
     padding-top: 35vh;
     text-align: center;
-    font-size: 18px; }
+    font-size: 18px;
+    display: none; }
     nav #mobile-menu li {
       margin-top: 26px; }
       nav #mobile-menu li a {
@@ -235,6 +236,8 @@ nav {
 @media (max-width: 768px) {
   nav #desktop-menu {
     display: none; }
+  nav #mobile-menu {
+    display: block; }
   nav #mobile-menu-button {
     display: block; }
 
