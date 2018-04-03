@@ -312,14 +312,25 @@ nav{
     left: -90px;
 }
 
-/* Media query */
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) { 
-    
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+
+}
+
+@media only screen and (max-width: 576px) {
+
 }
 
 // Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px){
+
+}
+
+// Large devices (desktops, 992px and up)
+@media only screen and (max-width: 992px){
+    #shape{
+        display: none;
+    }
+
     nav{
         #desktop-menu{
             display: none;
@@ -338,27 +349,37 @@ nav{
         #bottom-text{
             margin: 26vh 45px 0 45px;
             text-align: center;
+
+            #my-description{
+                font-size: 2.5em;
+                line-height: 58px;
+            }
         
             .contact-me{
-                margin-top: 20%;
+                margin-top: 16%;
+                font-size: 1.4em;
             }
 
+            #contact-me-button{
+                font-size: 1.4em;
+                width: 300px;
+                line-height: 50px;
+                height: 50px;
+                border-radius: 25px;
+                left: -150px;
+                margin-top: 25px;
+            }
+
+            //TODO risolvere problema nella versione "Ipad", il testo va troppo in fondo e non si vede
             #reserved{
                 float: none;
-                margin-top: 50%;
+                margin-top: 40vh;
             }
         }
     }
 }
 
-// Large devices (desktops, 992px and up)
-@media (max-width: 992px) {
-    #shape{
-        display: none;
-    }
-}
-
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 
 }

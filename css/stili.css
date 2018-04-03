@@ -232,8 +232,10 @@ nav {
   margin-left: 50%;
   left: -90px; }
 
-/* Media query */
-@media (max-width: 768px) {
+@media only screen and (max-width: 992px) {
+  #shape {
+    display: none; }
+
   nav #desktop-menu {
     display: none; }
   nav #mobile-menu {
@@ -244,13 +246,22 @@ nav {
   #home #bottom-text {
     margin: 26vh 45px 0 45px;
     text-align: center; }
+    #home #bottom-text #my-description {
+      font-size: 2.5em;
+      line-height: 58px; }
     #home #bottom-text .contact-me {
-      margin-top: 20%; }
+      margin-top: 16%;
+      font-size: 1.4em; }
+    #home #bottom-text #contact-me-button {
+      font-size: 1.4em;
+      width: 300px;
+      line-height: 50px;
+      height: 50px;
+      border-radius: 25px;
+      left: -150px;
+      margin-top: 25px; }
     #home #bottom-text #reserved {
       float: none;
-      margin-top: 50%; } }
-@media (max-width: 992px) {
-  #shape {
-    display: none; } }
+      margin-top: 40vh; } }
 
 /*# sourceMappingURL=stili.css.map */
